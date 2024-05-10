@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Node CI
 
 # Controls when the workflow will run
 on:
@@ -19,6 +19,6 @@ jobs:
       Greeting: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name1. Today is $DAY_OF_WEEK!"
+        run: echo "$Greeting $First_Name1. Today is ${Greeting.DAY_OF_WEEK}!"
         env:
           First_Name1: Mona
